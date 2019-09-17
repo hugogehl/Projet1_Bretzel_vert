@@ -7,27 +7,41 @@
         <meta name="author" content="Bretzel_vert">
         <meta name="description" content="Le site de My Green Strasbourg permet le recensement des associations et de leurs actions dans le domaine de l'écologie.">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <script type="text/javascript" src="script_hugo.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab%7CPoppins&display=swap" rel="stylesheet">
     </head>
     <body>
+        <nav class="block_navbar" role="navigation">
+            <div id="burger">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="burger_list">
+                    <a class="link_menu" href="#presentation"><li>Présentation</li></a>
+                    <a class="link_menu" href="#biere"><li>BiObernai Bier</li></a>
+                    <a class="link_menu" href="#infos"><li>Informations</li></a>
+                </ul>
+            </div>
+            <a href="index.html" class="link_img"><img href="index.html" class="logo" src="./Img_hugo/home.png" alt="Icon retour à l'acceuil"></a>
+            <ul class="nav_list">
+                <li><a href="#presentation" class="list">Présentation</a></li>
+                <li><a href="#biere" class="list">BiObernai Bier</a></li>
+                <li><a href="#infos" class="list">Informations</a></li>
+            </ul>
+        </nav>
+
         <div class="parent">
             <div class="test">test 1</div>
             <div class="test">test 2</div>
             <div class="test">test 3</div>
             <div class="test">test 4</div>
         </div>
-        <nav class="block_navbar">
-            <img class="logo" src="" alt="logo bretzel vert">
-            <ul class="">
-                <li class="">Actions</li>
-                <li class="">Associations</li>
-                <li class="">Déchets</li>
-            </ul>
-        </nav>
 
         <section class="block_asso_hugo">
-            <h1 class="titre_un">Biobernai</h1>
+            <h1 class="titre_un">BiObernai</h1>
             <h3 class="titre_trois">Par Alsace bio</h3>
-            <div class="mini_block_presentation">
+            <div class="mini_block_presentation" id="presentation">
                 <h2 class="titre_deux">Présentation de l'association</h2>
                 <img class="img_presentation" src="./Img_hugo/salon.jpg" alt="Image du salon BiObernai.">
                 <h3 class="titre_trois">Le concept de BiObernai</h3>
@@ -41,7 +55,7 @@
                 <p class="text_presentation">Conçu dans l’esprit convivial d’une grande fête de village, aux pieds de remparts de la ville pittoresque d’Obernai, BiObernai propose aux visiteurs un parcours de visite à travers différents espaces thématiques : quels que soient ses attentes, besoins ou centres d’intérêts, chacun peut y explorer, à son rythme, les différentes facettes du bio. Outre la possibilité d’y faire ses achats directement auprès des exposants, une multitude d’activités, toujours guidées dans un esprit collaboratif, pédagogique et ludique est proposée pour satisfaire tous les publics : conférences et ateliers thématiques (bien-être & santé, environnement, écomobilité, initiatives locales solidaires, etc), nombreuses animations pour petits et grands (ateliers enfants, ateliers cuisine, ateliers bien-être…), déambulations et prestations artistiques mêlant humour et poésie …
                     BiObernai est devenu au fil des années une manifestation où il fait bon venir en famille ou entre amis, pour une journée ou plus.</p>
             </div>
-            <div class="mini_block_biere">
+            <div class="mini_block_biere" id="biere">
                 <h2 class="titre_deux">BiObernai Bier</h2>
                 <div>
                     <h3 class="titre_trois">Son actualité</h3>
@@ -104,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mini_block_infos">
+            <div class="mini_block_infos" id="infos">
                 <h2 class="titre_deux">Informations pratiques</h2>
                 <h3 class="titre_trois">Où se déroule BiObernai ?</h3>
                 <p class="text_infos">Sur le parking des Remparts à Obernai (67 - Bas-Rhin). Un bel espace arboré aux pieds des remparts, à 2 pas du charmant centre ville d'Obernai.</p>
