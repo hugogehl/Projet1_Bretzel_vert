@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    background-color: antiquewhite;
+    padding: 0 1em;
+}
+.test{
+    background-color: blueviolet;
+    width: 25%;
+    margin: 1em;
+}
+
+.block_asso_hugo{
+    padding: 0 1em;
+}
+
+.titre_un{
+    padding: 0 25%;
+    margin: 1em;
+}
