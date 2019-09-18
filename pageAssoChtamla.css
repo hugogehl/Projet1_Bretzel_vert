@@ -98,6 +98,7 @@ body
 {
     flex:1 1 auto;
     flex-wrap: nowrap;
+    margin-left: 3%;
 }
 
 .image_audit
@@ -117,8 +118,19 @@ body
 
 .block_label
 {
-
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
+
+.texte_label
+{
+    flex:1 1 auto;
+    flex-wrap: nowrap;
+    margin-left: 3%;
+}
+
 
 .liste_label li
 {
