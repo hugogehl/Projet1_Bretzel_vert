@@ -1,0 +1,132 @@
+html
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+}
+
+
+h2
+{
+    font-family: font-family: 'Josefin Slab', serif;
+    font-size: 3.5em;
+}
+
+h3
+{
+    font-family: font-family: 'Josefin Slab', serif;
+    font-size: 3em;
+}
+
+h4
+{
+    font-family: font-family: 'Josefin Slab', serif;
+    font-size: 2.5em;
+}
+
+body
+{
+    margin: 2.5em;
+}
+
+.block_titre
+{
+    display:flex;
+    flex-direction: column;
+    background-color: #98FB98;
+}
+
+.image_titre
+{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.block_description
+{
+    display:flex;
+    flex-direction: column;
+    background-color: #98FB98;
+}
+
+.image_description
+{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.block_action
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.image_action
+{
+    flex:1 1 auto;
+}
+
+.liste_action
+{
+    flex:1 1 auto;
+}
+
+.liste_action li
+{
+    display:list-item;
+    list-style-image:url("ressource_images_projet_1/logo-abeille2.jpeg");
+    list-style-position: inside;
+}
+
+.block_audit
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.texte_audit
+{
+    flex:1 1 auto;
+}
+
+.image_audit
+{
+    flex:1 1 auto;
+}
+
+.liste_audit li
+{
+    display:list-item;
+    list-style-image:url("ressource_images_projet_1/logo-abeille2.jpeg");
+    list-style-position: inside;
+}
+
+.block_label
+{
+
+}
+
+.liste_label li
+{
+    display:list-item;
+    list-style-image:url("ressource_images_projet_1/logo-abeille2.jpeg");
+    list-style-position: inside;
+}
+
+.block_confort
+{
+
+}
+
+.liste_confort li
+{
+    display:list-item;
+    list-style-image:url("ressource_images_projet_1/logo-abeille2.jpeg");
+    list-style-position: inside;
+}
