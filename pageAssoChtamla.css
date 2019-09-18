@@ -56,6 +56,8 @@ body
     margin: auto;
 }
 
+/* gestion du bloc action*/
+
 .block_action
 {
     display: flex;
@@ -82,22 +84,26 @@ body
     list-style-position: inside;
 }
 
+/* gestion du bloc audit*/
+
 .block_audit
 {
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .texte_audit
 {
     flex:1 1 auto;
+    flex-wrap: nowrap;
 }
 
 .image_audit
 {
     flex:1 1 auto;
+    padding-left: 10px;
 }
 
 .liste_audit li
@@ -106,6 +112,8 @@ body
     list-style-image:url("ressource_images_projet_1/logo-abeille2.jpeg");
     list-style-position: inside;
 }
+
+/* gestion du bloc label*/
 
 .block_label
 {
@@ -118,6 +126,8 @@ body
     list-style-image:url("ressource_images_projet_1/logo-abeille2.jpeg");
     list-style-position: inside;
 }
+
+/* gestion du bloc confort*/
 
 .block_confort
 {
