@@ -18,8 +18,7 @@
     margin: 1em;
 }
 
-/* Début css */
-
+/* Début css  version mobile*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -27,12 +26,13 @@
 }
 
 /* Navbar */
-
 .block_navbar{
     background-color: grey;
     height: 50px;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .link_img{
@@ -46,7 +46,7 @@
 }
 
 .nav_list{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     list-style-type: none;
@@ -68,7 +68,9 @@
 }
 
 .list::before,
-.list--current::after{
+.list--current::after,
+.footer_link::before,
+.footer_link--current::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -78,20 +80,23 @@
     background-color: currentColor;
 }
 
-.list::before{
+.list::before,
+.footer_link::before{
     opacity: 1;
     transform: scale(0, 1);
     transform-origin: top right;
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-out;
 }
 
-.list:hover::before{
+.list:hover::before,
+.footer_link:hover::before{
     opacity: 1;
     transform: scale(1);
     transform-origin: top left;
 }
 
-.list--current::after{
+.list--current::after,
+.footer_link--current::after{
     opacity: 0.125;
 }
 
@@ -142,7 +147,6 @@
 }
 
 /* Bouton close */
-
 #burger input:checked ~ span{
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
@@ -175,16 +179,58 @@
     transform: none;
 }
 
-/* Responsive avec burger */
+/* Footer */
+.block_footer{
+    background-color: grey;
+    margin-top: 20px;
+}
+
+.footer_link{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.column_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block_link{
+    display: flex;
+    flex-direction: column;
+}
+
+.twi{
+    width: 36px;
+    margin-left: 4px;
+}
+
+/* Responsive tablette */
 
 @media screen and (min-width: 801px){
+    .nav_list{
+        display: flex;
+    }
+
     #burger{
         display: none;
     }
+
+    .column_footer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .block_link{
+        padding: 10px 0;
+    }
+
+    .footer_link{
+        margin: 0 5%;
+    }
 }
 
-@media screen  and (max-width: 800px){
-   .nav_list{
-       display: none;
-   }
-}
+/* Responsive desktop */
