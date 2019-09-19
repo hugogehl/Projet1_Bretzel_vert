@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     position: sticky;
+    z-index: 1;
     top: 0;
 }
 
@@ -421,6 +422,78 @@
         animation-duration: 20s;
         animation-iteration-count: infinite;
     }
+}
+
+/* Block action et asso */
+
+.titre_deux {
+    text-align: center;
+    margin-top: 40px;
+}
+.liste_actions {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+.picture {
+    margin-bottom: 10px;
+    height: auto;
+    width: auto;
+}
+.picture img {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 250px;
+    height: 100%;
+    background-size: cover;
+    padding: 0;
+    margin: 10px;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.block_actions, .block_asso {
+    margin-bottom: 50px;
+    padding: 5px;
+}
+.text {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.liste_actions li, .liste_asso li {
+    list-style-type: none;
+}
+
+.liste_asso {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.logo img {
+    display: flex;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    margin: 10px;
+    justify-content: center;
+    align-content: space-around;
+    -webkit-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;
+}
+
+.logo:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 /* Footer */
