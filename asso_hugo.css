@@ -290,6 +290,8 @@ h5{
 .box_biere_img{
     width: 25%;
     margin-left: -10px;
+    display: flex;
+    justify-content: center;
 }
 
 .box_biere_text{
@@ -346,6 +348,18 @@ h5{
     padding-left: 0.5em;
 }
 
+.text_infos{
+    width: 75%;
+}
+
+.titre_tar, .text_tar{
+    margin-left: 25%;
+    padding-left: 0.2em;
+}
+
+.text_tar{
+    padding-left: 0.3em;
+}
 /* Footer */
 .block_footer{
     background-color: mediumseagreen;
@@ -377,7 +391,7 @@ h5{
 
 /* Responsive tablette */
 
-@media screen and (min-width: 801px){
+@media screen and (min-width: 801px) and (max-width: 1199px){
     .nav_list{
         display: flex;
     }
@@ -398,6 +412,54 @@ h5{
     .footer_link{
         margin: 0 5%;
     }
+
+    .img_presentation{
+        margin: 0 25%;
+        width: 50%;
+    }
+
+    .text_presentation, .img_descri{
+        margin-left: 25%;
+        padding-left: 0.5em;
+    }
+
+   .img_descri{
+       margin-left: 0;
+       padding-left: 0;
+       padding-right: 1em;
+       margin-right: 1em;
+       width: 50%;
+       float: left;
+   }
+
+   .text_descri{
+       width: 100%;
+       margin-left: 0;
+       padding-left: 0;
+   }
+
+   .titre_biere{
+       width: 50%;
+   }
+
+   .affiche_biere{
+       width: 25%;
+       padding-right: 1.5em;
+   }
+
+   .titre_affiche{
+       padding-left: 0.4em;
+   }
+
+    .div_obernai{
+       padding-left: 0.5em;
+   }
+
 }
 
 /* Responsive desktop */
+@media screen and (min-width: 1200px){
+    body{
+        background-color: rgba(150, 20, 10, 0.1);
+    }
+}
