@@ -6,22 +6,52 @@
     <link rel="stylesheet" href="style.css">
     <meta name="author" content="Bretzel_vert">
     <meta name="description" content="Le site de My Green Strasbourg permet le recensement des associations et de leurs actions dans le domaine de l'écologie.">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab%7CPoppins&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <nav class="block_navbar">
-      <img class="logo" src="" alt="logo bretzel vert">
-      <ul class="">
-        <li class="">Actions</li>
-        <li class="">Associations</li>
-        <li class="">Déchets</li>
+    <nav class="block_navbar" role="navigation">
+      <div id="burger">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="burger_list">
+          <li class="list_burger"><a class="link_menu" href="#actions">Actions</a></li>
+          <li class="list_burger"><a class="link_menu" href="#asso">Associations</a></li>
+          <li class="list_burger"><a class="link_menu" href="#gestion">Gestion des déchets</a></li>
+          <li class="list_burger"><a class="link_menu" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <a href="index.html" class="link_img"><img class="logo" src="./Img_hugo/home.png" alt="Icon retour à l'acceuil"></a>
+      <ul class="nav_list">
+        <li><a href="#actions" class="list">Actions</a></li>
+        <li><a href="#asso" class="list">Associations</a></li>
+        <li><a href="#gestion" class="list">Gestion des déchets</a></li>
+        <li><a href="#contact" class="list">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="slideshow">
+      <ul class="slideshow-Content">
+		   <li><img src="ressource_images_projet_1/slide_show_1.jpg" width="850" height="475" alt="image d'une ville en fleur" ></li>
+		   <li><img src="ressource_images_projet_1/slide_show_2.jpg" width="850" height="475"alt="image d'un hotel a insectes" ></li>
+		   <li><img src="ressource_images_projet_1/slide_show_3.jpg" width="850" height="475"alt="image d'un cultivateur" ></li>
+           <li><img src="ressource_images_projet_1/slide_show_4.jpg" width="850" height="475"alt="image de dechets pour compostage" ></li>
+      </ul>
+    </div>
+    <div class="slideshow_mobile">
+      <ul class="slideshow_mobile-Content">
+		   <li><img src="ressource_images_projet_1/slide_show_1_mobile.jpg" width="400" height="230" alt="image d'une ville en fleur" ></li>
+           <li><img src="ressource_images_projet_1/slide_show_2_mobile.jpg" width="400" height="230"alt="image d'un hotel a insectes" ></li>
+           <li><img src="ressource_images_projet_1/slide_show_3_mobile.jpg" width="400" height="230"alt="image d'un cultivateur" ></li>
+           <li><img src="ressource_images_projet_1/slide_show_4_mobile.jpg" width="400" height="230"alt="image de dechets pour compostage" ></li>
+      </ul>
+    </div>
     
     <img class="images une" src="" alt="">
     
-    <section class="block_actions">
+    <section class="block_actions" id="actions">
       <h2 class="titre_deux">Actions</h2>
       <ul class="liste_actions">
         <li class="actions_un"></li>
@@ -31,7 +61,7 @@
       </ul>  
     </section>
     
-    <section class="block_asso">
+    <section class="block_asso" id="asso">
       <h2 class="titre_deux">Associations</h2>
       <ul class="liste_asso">
         <li class="asso_un"></li>
@@ -41,7 +71,7 @@
       </ul>  
     </section>
     
-    <section class="block_gestion">
+    <section class="block_gestion" id="gestion">
       <h2 class="titre_deux">Gestion des déchets</h2>
       <div class="mini_block_conseils">
         <h3 class="titre_trois">Conseils</h3>
@@ -55,21 +85,25 @@
       </div>
     </section>
     
-    <form class="block_form">
+    <form class="block_form" id="contact">
       <h2 class="titre_deux">Contact</h2>
       <label><input type="text" placeholder="Nom"></label>
       <label><input type="text" placeholder="@"></label>
       <label><textarea placeholder="Ton message"></textarea></label>
     </form>
-    
+
     <footer class="block_footer">
-      <a class="footer_link" href="">À propos</a>
-      <a class="footer_link" href="">Mentions légales</a>
-      <a class="footer_link" href="">Nous rejoindre</a>
-      <a class="footer_link" href="">Nos partenaires</a>
-      <img src="" alt="logo facebook">
-      <img src="" alt="logo instagram">
-      <img src="" alt="logo twitter">
+      <div class="column_footer block_link">
+        <a class="footer_link" href="">À propos</a>
+        <a class="footer_link" href="">Mentions légales</a>
+        <a class="footer_link" href="">Nous rejoindre</a>
+        <a class="footer_link" href="">Nos partenaires</a>
+      </div>
+      <div class="column_footer bloc_logo">
+        <a href="https://www.facebook.com/geobiologie67/" target="_blank" class="link_fb"><img class="logo" src="./Img_grp/fb.png" alt="logo facebook"></a>
+        <a href="https://www.instagram.com/biobernai/" target="_blank" class="link_insta"><img class="logo" src="./Img_grp/insta.png" alt="logo instagram"></a>
+        <a href="https://twitter.com/BiObernai" target="_blank" class="link_twi"><img class="logo twi" src="./Img_grp/twi.png" alt="logo twitter"></a>
+      </div>
     </footer>
   </body>
 </html>
