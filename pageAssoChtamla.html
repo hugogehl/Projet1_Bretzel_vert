@@ -11,14 +11,27 @@
   </head>
 
   <body>
-    <nav class="block_navbar">
-      <img class="logo" src="" alt="logo bretzel vert">
-      <ul class="">
-        <li class="">Actions</li>
-        <li class="">Associations</li>
-        <li class="">Déchets</li>
+  <nav class="block_navbar" role="navigation">
+      <div id="burger">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="burger_list">
+              <li class="list_burger"><a class="link_menu" href="#actions">Actions</a></li>
+              <li class="list_burger"><a class="link_menu" href="#asso">Associations</a></li>
+              <li class="list_burger"><a class="link_menu" href="#gestion">Gestion des déchets</a></li>
+              <li class="list_burger"><a class="link_menu" href="#contact">Contact</a></li>
+          </ul>
+      </div>
+      <a href="index.html" class="link_img"><img class="logo" src="./Img_hugo/home.png" alt="Icon retour à l'acceuil"></a>
+      <ul class="nav_list">
+          <li><a href="#actions" class="list">Actions</a></li>
+          <li><a href="#asso" class="list">Associations</a></li>
+          <li><a href="#gestion" class="list">Gestion des déchets</a></li>
+          <li><a href="#contact" class="list">Contact</a></li>
       </ul>
-    </nav>
+  </nav>
 
 
     <section class="block_assoc">
@@ -35,7 +48,7 @@
             Leur accompagnement se veut pragmatique avec des solutions concrètes, adaptées aux besoins et aux contraintes, économiques et faciles à mettre en œuvre.</p>
        </div>
 
-        <div class="titre_trois"> <h3 > Actions </h3> </div>
+        <div class="titre_trois" id="action_biodiversité_pour_tous"> <h3 > Actions </h3> </div>
         <div class="block_action">
             <img class="image_action" src="ressource_images_projet_1/action-ecologique.jpg" alt="photo d'une plante dans les mains d'un homme">
            <div class="liste_action">
@@ -124,14 +137,18 @@
    </section>
 
 
-    <footer class="block_footer">
-      <a class="footer_link" href="">À propos</a>
-      <a class="footer_link" href="">Mentions légales</a>
-      <a class="footer_link" href="">Nous rejoindre</a>
-      <a class="footer_link" href="">Nos partenaires</a>
-      <img src="" alt="logo facebook">
-      <img src="" alt="logo instagram">
-      <img src="" alt="logo twitter">
-    </footer>
+  <footer class="block_footer">
+      <div class="column_footer block_link">
+          <a class="footer_link" href="">À propos</a>
+          <a class="footer_link" href="">Mentions légales</a>
+          <a class="footer_link" href="">Nous rejoindre</a>
+          <a class="footer_link" href="">Nos partenaires</a>
+      </div>
+      <div class="column_footer bloc_logo">
+          <a href="https://www.facebook.com/geobiologie67/" target="_blank" class="link_fb"><img class="logo" src="./Img_grp/fb.png" alt="logo facebook"></a>
+          <a href="https://www.instagram.com/biobernai/" target="_blank" class="link_insta"><img class="logo" src="./Img_grp/insta.png" alt="logo instagram"></a>
+          <a href="https://twitter.com/BiObernai" target="_blank" class="link_twi"><img class="logo twi" src="./Img_grp/twi.png" alt="logo twitter"></a>
+      </div>
+  </footer>
   </body>
 </html>
