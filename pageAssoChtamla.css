@@ -298,6 +298,7 @@
     .liste_action
     {
         flex:1 1 auto;
+        max-width: 50%;
     }
 
     .liste_action li
@@ -312,23 +313,22 @@
     .block_audit
     {
         display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
+        justify-content: space-between;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
-    .texte_audit
-    {
-        flex:1 1 auto;
-        margin-left: 10%;
-    }
 
     .image_audit
     {
         flex:1 1 auto;
-        max-width:1000px;
+        max-width:50%;
         height: auto;
+    }
+
+    .liste_audit
+    {
+        max-width: 50%;
     }
 
     .liste_audit li
