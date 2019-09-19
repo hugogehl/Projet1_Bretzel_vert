@@ -272,12 +272,73 @@ h5{
     padding-right: 0.5em;
     margin-right: 25%;
     width: 75%;
+    margin-bottom: 10px;
 }
 
 .text_descri{
     padding-left: 0.5em;
     margin-left: 25%;
     width: 75%;
+}
+
+.box_biere{
+    display: flex;
+    flex-direction: row;
+}
+
+.box_biere_img{
+    width: 25%;
+    margin-left: -10px;
+}
+
+.box_biere_text{
+    width: 75%;
+    padding-left: 1em;
+}
+
+.ss_titre{
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 0.5em;
+}
+
+.text_biere{
+    margin-right: 25%;
+}
+
+.list_biere{
+    padding-left: 1em;
+}
+
+.titre_affiche{
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+.box_ob{
+    display: flex;
+}
+
+.affiche_biere{
+    width: 50%;
+    padding-right: 1em;
+}
+
+.div_obernai{
+    width: 50%;
+    padding-left: 1em;
+}
+
+.img_hist{
+    width: 100%;
+}
+
+.hist{
+    margin-left: 25%;
+    width: 75%;
+    padding-left: 0.5em;
+    margin-top: 10px;
 }
 
 /* Footer */
