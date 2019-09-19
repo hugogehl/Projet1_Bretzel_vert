@@ -1,0 +1,49 @@
+.mini_block_conseils{
+  border: 10px ridge #FFF933;
+  background-color: #80FF33;
+  padding: .5rem;
+  overflow: auto;
+
+     
+}
+.mini_block_coll{
+  border: 10px ridge #FFF933;
+  background-color: #80FF33;
+  padding: .5rem;
+  
+}
+
+.mini_block_conseils img{
+ width: 500px;
+ height: 400px;
+}
+.mini_block_coll img{
+width: 400px;
+height: 300px;
+
+}
+
+.mini_block_conseils p,.mini_block_coll p{
+  font: small-caps bold 1.3rem sans-serif;
+  
+}
+
+}
+.img_coll,.img_conseils{
+float: left;
+}
+.nav {
+background-color: yellow; 
+list-style-type: none;
+text-align: center;
+margin: 3;
+padding: 3;
+}
+.nav li {
+display: inline-block;
+font-size: 20px;
+padding: 20px;
+}
+img{
+float:left;
+}
