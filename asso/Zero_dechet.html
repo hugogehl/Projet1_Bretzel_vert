@@ -10,22 +10,31 @@
 </head>
 
 <body class=content">
-<nav class="block_navbar">
-    <img class="logo" src="" alt="logo bretzel vert">
-    <ul class="">
-        <li class="">Actions</li>
-        <li class="">Associations</li>
-        <li class="">Déchets</li>
+<nav class="block_navbar" role="navigation">
+    <div id="burger">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="burger_list">
+            <li class="list_burger"><a class="link_menu" href="#presentation">Présentation</a></li>
+            <li class="list_burger"><a class="link_menu" href="#actions">Actions</a></li>
+
+        </ul>
+    </div>
+    <a href="../index.html" class="link_img"><img class="logo" src="../Img_hugo/home.png" alt="Icon retour à l'acceuil"></a>
+    <ul class="nav_list">
+        <li><a href="#presentation" class="list">Présentation</a></li>
+        <li><a href="#actions" class="list">Actions</a></li>
     </ul>
 </nav>
-
 <section>
         <h1 class="titre_un">Zéro Déchet Strasbourg</h1>
-        <h3 class="titre_trois">Présentation</h3>
+        <h3 class="titre_trois" id="presentation">Présentation</h3>
         <div class="text_bandeau">"Le meilleur déchet est celui qu'on ne produit pas"</div>
 
     <div class="zero_dechet">
-            <div class="photo_logo"><img src="img/zero_dechet.png" alt="Logo Zéro Déchet"></div>
+            <div class="photo_logo"><img src="../Img_grp/zero_dechet.png" alt="Logo Zéro Déchet"></div>
                 <div class="text_conseils">
                     <p>Zéro Déchet Strasbourg est un groupe local de l’association nationale Zero Waste France (ancien CNIID). L’association a pour objectif de sensibiliser les habitants et les décideurs de l’agglomération de Strasbourg sur la problématique des déchets et de se mobiliser pour une réduction et une gestion plus durable de ces derniers.</p>
                     <p>Zéro Déchet Strasbourg développe continuellement son réseau et ses partenariats avec d’autres associations dans le but de créer des dynamiques communes et de co-construire ensemble de nouveaux projets. L'association a été créée en avril 2016 sous forme de collectif par une poignée de citoyens Strasbourgeois engagés et impliqués dans les démarches écologiques, elle a connu dès le début un beau succès : venue de Robert Reed, intérêts des particuliers et de la Ville pour cette démarche et création de projets autours du zéro déchet.</p>
@@ -45,8 +54,8 @@
 
 <section>
     <h3 class="titre_trois">Les actions</h3>
-        <div class="actions">
-            <div class="photo_stop_pub"><img src="img/stop_pub.png" alt="Action Mets ton stop pub"></div>
+        <div class="actions" id="actions">
+            <div class="photo_stop_pub"><img src="../Img_grp/stop_pub.png" alt="Action Mets ton stop pub"></div>
                 <div class="text_stop_pub">
                     <h4>Mets ton stop pub</h4>
                     <p>Les prospectus/publicités non nominatives distribuées dans les boîtes aux lettres représentent 31kg par foyer et par an, soit 2 arbres !</p>
@@ -58,7 +67,7 @@
     </div>
 
         <div id="bas_pailles">
-            <div class="photo_bas_pailles"><img src="img/no_pailles.png" alt="Action Bas les pailles"></div>
+            <div class="photo_bas_pailles"><img src="../Img_grp/no_pailles.png" alt="Action Bas les pailles"></div>
                 <div class="text_bas_pailles">
                     <h4>Bas les pailles ! </h4>
                      <p>En France, des millions de pailles sont jetées chaque jour, et c'est un des déchets plastiques les plus présents sur les océans et les plages.</p>
@@ -79,13 +88,17 @@
 </section>
 
 <footer class="block_footer">
-    <a class="footer_link" href="">À propos</a>
-    <a class="footer_link" href="">Mentions légales</a>
-    <a class="footer_link" href="">Nous rejoindre</a>
-    <a class="footer_link" href="">Nos partenaires</a>
-    <img src="" alt="logo facebook">
-    <img src="" alt="logo instagram">
-    <img src="" alt="logo twitter">
+    <div class="column_footer block_link">
+        <a class="footer_link" href="">À propos</a>
+        <a class="footer_link" href="">Mentions légales</a>
+        <a class="footer_link" href="">Nous rejoindre</a>
+        <a class="footer_link" href="">Nos partenaires</a>
+    </div>
+    <div class="column_footer bloc_logo">
+        <a href="https://www.facebook.com/geobiologie67/" target="_blank" class="link_fb"><img class="logo" src="../Img_grp/fb.png" alt="logo facebook"></a>
+        <a href="https://www.instagram.com/biobernai/" target="_blank" class="link_insta"><img class="logo" src="../Img_grp/insta.png" alt="logo instagram"></a>
+        <a href="https://twitter.com/BiObernai" target="_blank" class="link_twi"><img class="logo twi" src="../Img_grp/twi.png" alt="logo twitter"></a>
+    </div>
 </footer>
 </body>
 </html>
