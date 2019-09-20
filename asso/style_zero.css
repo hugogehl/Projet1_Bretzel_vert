@@ -421,7 +421,7 @@ section{
     margin: 0 1em;
 }
 
-p{
+p, li{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
@@ -455,4 +455,3 @@ h5{
     font-size: 14px;
     font-style: italic;
 }
-
