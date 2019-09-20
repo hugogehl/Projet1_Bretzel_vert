@@ -204,12 +204,12 @@
 .titre_un{
     padding: 0;
     color: mediumseagreen;
-    margin: 1em;
 }
 .actions {
      display: flex;
      width: 100%;
      flex-direction: row-reverse;
+    margin-top: 5px;
  }
 .titre_trois {
     width: 75%;
