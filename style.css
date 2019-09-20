@@ -122,9 +122,9 @@
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    background: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    opacity: 0.55s ease;
 }
 
 #burger span:first-child{
@@ -429,6 +429,7 @@
 .titre_deux {
     text-align: center;
     margin-top: 40px;
+    font-family: 'Josefin Slab', serif;
 }
 .liste_actions {
     max-width: 1200px;
@@ -475,6 +476,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin: auto;
 }
 .logo img {
     display: flex;
@@ -495,6 +497,58 @@
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
+
+/* Block gestion de déchets*/
+
+.mini_block_conseils{
+    border: 10px ridge #FFF933;
+    background-color: #80FF33;
+    padding: .5rem;
+    overflow: auto;
+
+
+}
+.mini_block_coll{
+    border: 10px ridge #FFF933;
+    background-color: #80FF33;
+    padding: .5rem;
+
+}
+
+.mini_block_conseils img{
+    width: 500px;
+    height: 400px;
+}
+.mini_block_coll img{
+    width: 400px;
+    height: 300px;
+
+}
+
+.mini_block_conseils p,.mini_block_coll p{
+    font: small-caps bold 1.3rem sans-serif;
+
+}
+
+.img_coll,.img_conseils{
+    float: left;
+}
+.nav {
+    background-color: yellow;
+    list-style-type: none;
+    text-align: center;
+    margin: 3;
+    padding: 3;
+}
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+img{
+    float:left;
+}
+
 
 /* Footer */
 .block_footer{
