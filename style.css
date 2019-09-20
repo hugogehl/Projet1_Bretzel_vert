@@ -529,10 +529,16 @@
 
 .mini_block_conseils p,.mini_block_coll p{
     font: 1rem 'Poppins', sans-serif;
+    text-align: justify;
 }
 
 .img_coll,.img_conseils{
     float: left;
+    margin-right: 2em;
+}
+
+.text_coll {
+padding-left: 10px;
 }
 .nav {
     /*background-color: yellow;*/
