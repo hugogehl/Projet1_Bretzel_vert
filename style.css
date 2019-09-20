@@ -6,7 +6,7 @@
 
 /* Navbar */
 .block_navbar{
-    background-color: grey;
+    background-color: mediumseagreen;
     height: 50px;
     display: flex;
     align-items: center;
@@ -156,7 +156,7 @@
     margin: -100px 0 0 -200px;
     padding: 0 50px;
     padding-top: 125px;
-    background: grey;
+    background: mediumseagreen;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0 0;
@@ -431,6 +431,7 @@
     margin-top: 40px;
     font-family: 'Josefin Slab', serif;
 }
+
 .liste_actions {
     max-width: 1200px;
     margin: auto;
@@ -500,19 +501,21 @@
 
 /* Block gestion de déchets*/
 
+.titre_trois_dechets {
+    text-align: left;
+    margin-top: 40px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 2em;
+    margin-left: 2.5em;
+}
 .mini_block_conseils{
-    border: 10px ridge #FFF933;
-    background-color: #80FF33;
-    padding: .5rem;
+    padding: 1em;
     overflow: auto;
-
-
+    font-family: 'Poppins', sans-serif;
 }
 .mini_block_coll{
-    border: 10px ridge #FFF933;
-    background-color: #80FF33;
     padding: .5rem;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 .mini_block_conseils img{
@@ -522,19 +525,17 @@
 .mini_block_coll img{
     width: 400px;
     height: 300px;
-
 }
 
 .mini_block_conseils p,.mini_block_coll p{
-    font: small-caps bold 1.3rem sans-serif;
-
+    font: 1rem 'Poppins', sans-serif;
 }
 
 .img_coll,.img_conseils{
     float: left;
 }
 .nav {
-    background-color: yellow;
+    /*background-color: yellow;*/
     list-style-type: none;
     text-align: center;
     margin: 3;
@@ -549,10 +550,32 @@ img{
     float:left;
 }
 
+/* Block_form */
+
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+textarea, input {
+    width: 60%;
+    margin-top: 10px;
+}
+
+button{
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+
+
 
 /* Footer */
 .block_footer{
-    background-color: grey;
+    background-color: mediumseagreen;
     margin-top: 20px;
 }
 
