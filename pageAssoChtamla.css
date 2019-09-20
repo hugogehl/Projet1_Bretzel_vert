@@ -268,7 +268,9 @@
         display:flex;
         flex-direction: column;
         background-color: #98FB98;
+        margin-bottom: 40px;
     }
+
 
     .image_description
     {
@@ -285,6 +287,8 @@
         flex-direction: row-reverse;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-top: 40px;
+        margin-bottom:50px;
 
     }
 
@@ -292,7 +296,6 @@
     {
         flex:1 1 auto;
         max-width: 50%;
-
     }
 
     .liste_action
@@ -316,6 +319,8 @@
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: nowrap;
+        margin-top: 40px;
+        margin-bottom: 50px;
     }
 
 
@@ -324,6 +329,7 @@
         flex:1 1 auto;
         max-width:50%;
         height: auto;
+        padding-right: 20px;
     }
 
     .liste_audit
@@ -346,6 +352,8 @@
         justify-content: space-around;
         flex-direction: row;
         flex-wrap: nowrap;
+        margin-top: 40px;
+        margin-bottom: 50px;
     }
 
     .texte_label
@@ -371,6 +379,8 @@
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
 
     }
 
@@ -461,6 +471,7 @@
         display:flex;
         flex-direction: column;
         background-color: #98FB98;
+        margin-bottom: 40px;
     }
 
     .image_description
@@ -478,6 +489,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
 
     }
 
@@ -507,6 +520,8 @@
         flex-direction: row-reverse;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
 
     }
 
@@ -537,6 +552,8 @@
         justify-content: space-around;
         flex-direction: column;
         flex-wrap: nowrap;
+        margin-bottom: 40px;
+        margin-top: 40px;
     }
 
     .texte_label
@@ -656,6 +673,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
 
     }
 
@@ -686,6 +705,8 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
+        margin-bottom: 30px;
+        margin-top: 30px;
 
     }
 
@@ -717,6 +738,8 @@
         justify-content: space-around;
         flex-direction: column;
         flex-wrap: nowrap;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     .texte_label
@@ -742,6 +765,8 @@
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
 
     }
 
