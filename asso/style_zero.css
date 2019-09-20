@@ -15,7 +15,7 @@ h1, h2, h3 {
 
 /* Navbar */
 .block_navbar{
-    background-color: grey;
+    background-color: mediumseagreen;
     height: 50px;
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@ h1, h2, h3 {
     margin: -100px 0 0 -200px;
     padding: 0 50px;
     padding-top: 125px;
-    background: grey;
+    background: mediumseagreen;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0 0;
@@ -213,12 +213,12 @@ h1, h2, h3 {
 .titre_un{
     padding: 0;
     color: mediumseagreen;
-    margin: 1em;
 }
 .actions {
      display: flex;
      width: 100%;
      flex-direction: row-reverse;
+    margin-top: 5px;
  }
 .titre_trois {
     width: 75%;
@@ -284,7 +284,7 @@ h1, h2, h3 {
 
 /* Footer */
 .block_footer{
-    background-color: grey;
+    background-color: mediumseagreen;
     margin-top: 20px;
 }
 
