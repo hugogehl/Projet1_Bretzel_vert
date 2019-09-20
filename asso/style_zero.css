@@ -1,21 +1,12 @@
 *{
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    margin: 2.5em;
-}
-h1, h2, h3 {
-    font-family: 'Josefin Slab', serif;
-    font-size: 2em;
-    margin: 2.5em;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar */
 .block_navbar{
-    background-color: grey;
+    background-color: mediumseagreen;
     height: 50px;
     display: flex;
     align-items: center;
@@ -127,7 +118,7 @@ h1, h2, h3 {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #cdcdcd;
+    background: white;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0;
@@ -165,7 +156,7 @@ h1, h2, h3 {
     margin: -100px 0 0 -200px;
     padding: 0 50px;
     padding-top: 125px;
-    background: grey;
+    background: mediumseagreen;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0 0;
@@ -213,12 +204,12 @@ h1, h2, h3 {
 .titre_un{
     padding: 0;
     color: mediumseagreen;
-    margin: 1em;
 }
 .actions {
      display: flex;
      width: 100%;
      flex-direction: row-reverse;
+    margin-top: 5px;
  }
 .titre_trois {
     width: 75%;
@@ -284,7 +275,7 @@ h1, h2, h3 {
 
 /* Footer */
 .block_footer{
-    background-color: grey;
+    background-color: mediumseagreen;
     margin-top: 20px;
 }
 
@@ -338,7 +329,6 @@ h1, h2, h3 {
 
 @media screen and (max-width: 800px) {
     body {
-        margin: 1em;
         font-size: 0.8em;
     }
 
@@ -374,7 +364,6 @@ h1, h2, h3 {
     }
     .actions :first-child {
         align-self: center;
-        width: 150px;
         height: auto;
     }
     .photo_stop_pub {
@@ -393,7 +382,6 @@ h1, h2, h3 {
     }
     #bas_pailles :first-child {
         align-self: center;
-        width: 150px;
         height: auto;
     }
     .photo_bas_pailles{
@@ -413,7 +401,7 @@ h1, h2, h3 {
     }
     .agir :first-child {
         align-self: center;
-        width: 150px;
+        width: 300px;
         height: auto;
     }
     .photo_agir {
@@ -426,4 +414,44 @@ h1, h2, h3 {
         margin: 1.5em;
         width: 75%;
     }
+}
+
+/* Polices et marges */
+section{
+    margin: 0 1em;
+}
+
+p, li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Josefin Slab', serif;
+    color: mediumseagreen;
+    margin: 0.6em 0;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 35px;
+    padding-top: 60px;
+}
+
+h3{
+    font-size: 32px;
+    width: 75%;
+}
+
+h4{
+    font-size: 25px;
+}
+
+h5{
+    font-size: 14px;
+    font-style: italic;
 }

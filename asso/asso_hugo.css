@@ -1,18 +1,3 @@
-.parent{
-    display: flex;
-    background-color: antiquewhite;
-    padding: 0 1em;
-    position: sticky;
-    top: 50px;
-}
-.test{
-    background-color: blueviolet;
-    width: 25%;
-    margin: 1em;
-    position: sticky;
-    top: 50px;
-}
-
 /* Début css  version mobile*/
 *{
     box-sizing: border-box;
@@ -22,12 +7,13 @@
 
 /* Navbar */
 .block_navbar{
-    background-color: grey;
+    background-color: mediumseagreen;
     height: 50px;
     display: flex;
     align-items: center;
     top: 0;
     position: sticky;
+    z-index: 1;
 }
 
 .link_img{
@@ -135,13 +121,11 @@
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #cdcdcd;
+    background: white;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #burger span:first-child{
@@ -173,7 +157,7 @@
     margin: -100px 0 0 -200px;
     padding: 0 50px;
     padding-top: 125px;
-    background: grey;
+    background: mediumseagreen;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0 0;
@@ -197,6 +181,7 @@ p{
 
 h1, h2, h3, h4, h5{
     font-family: 'Josefin Slab', serif;
+    color: mediumseagreen;
     margin: 0.6em 0;
 }
 
@@ -207,6 +192,7 @@ h1{
 
 h2{
     font-size: 35px;
+    padding-top: 60px;
 }
 
 h3{
@@ -238,6 +224,7 @@ h5{
 
 .titre_un{
     padding: 0 25%;
+    padding-top: 30px;
     margin: 0.6em 0.2em;
 }
 
@@ -289,6 +276,12 @@ h5{
 .box_biere_img{
     width: 25%;
     margin-left: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+.img_biere{
+    max-height: 439px;
 }
 
 .box_biere_text{
@@ -300,7 +293,6 @@ h5{
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 10px;
-    padding-left: 0.5em;
 }
 
 .text_biere{
@@ -312,8 +304,9 @@ h5{
 }
 
 .titre_affiche{
-    margin-left: 25%;
+    margin-left: 0;
     margin-top: 20px;
+    padding-left: 0;
 }
 
 .box_ob{
@@ -341,9 +334,26 @@ h5{
     margin-top: 10px;
 }
 
+.list_biere{
+    margin-left: 25%;
+    padding-left: 0.5em;
+}
+
+.text_infos{
+    width: 75%;
+}
+
+.titre_tar, .text_tar{
+    margin-left: 25%;
+    padding-left: 0.2em;
+}
+
+.text_tar{
+    padding-left: 0.3em;
+}
 /* Footer */
 .block_footer{
-    background-color: grey;
+    background-color: mediumseagreen;
     margin-top: 20px;
 }
 
@@ -366,13 +376,13 @@ h5{
 }
 
 .twi{
-    width: 36px;
+    width: 51px;
     margin-left: 4px;
 }
 
 /* Responsive tablette */
 
-@media screen and (min-width: 801px){
+@media screen and (min-width: 801px) and (max-width: 1199px){
     .nav_list{
         display: flex;
     }
@@ -393,6 +403,210 @@ h5{
     .footer_link{
         margin: 0 5%;
     }
+
+    .img_presentation{
+        margin: 0 25%;
+        width: 50%;
+    }
+
+    .text_presentation, .img_descri{
+        margin-left: 25%;
+        padding-left: 0.5em;
+    }
+
+   .img_descri{
+       margin-left: 0;
+       padding-left: 0;
+       padding-right: 1em;
+       margin-right: 1em;
+       width: 50%;
+       float: left;
+   }
+
+   .text_descri{
+       width: 100%;
+       margin-left: 0;
+       padding-left: 0;
+   }
+
+   .titre_biere{
+       width: 50%;
+   }
+
+   .affiche_biere{
+       width: 25%;
+       padding-right: 1.5em;
+   }
+
+    .div_obernai{
+       padding-left: 0.5em;
+   }
 }
 
 /* Responsive desktop */
+@media screen and (min-width: 1200px){
+    .nav_list{
+        display: flex;
+    }
+
+    #burger{
+        display: none;
+    }
+
+    .column_footer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .block_link{
+        padding: 10px 0;
+    }
+
+    .footer_link{
+        margin: 0 5%;
+    }
+
+    .img_presentation{
+        margin: 0 25%;
+        width: 50%;
+        padding-right: 0.5em;
+    }
+
+    .text_presentation{
+        margin-left: 25%;
+        width: 50%;
+        padding-left: 0.5em;
+    }
+
+    .img_descri{
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0.5em;
+        margin-right: 0;
+        width: 75%;
+        float: left;
+    }
+
+    .text_descri{
+        width: 25%;
+        margin-left: 75%;
+        padding-left: 1.5em;
+    }
+
+    .img_botte{
+        width: 25%;
+    }
+
+    .bio_biere{
+        position: relative;
+        margin-left: 0;
+        width: 25%;
+    }
+
+    .text_biere{
+        width: 100%;
+    }
+
+    .img_biere{
+        width: 50%;
+        max-height: 800px;
+    }
+
+    .box_biere_text{
+        width: 50%;
+    }
+
+    .titre_biere{
+        width: 100%;
+    }
+
+    .affiche_biere{
+        width: 25%;
+        margin-left: 25%;
+        padding-left: 0.5em;
+    }
+
+    .text_obernai, .titre_obernai{
+        padding-left: 0.5em;
+    }
+
+    .list_biere{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .achat_biere{
+        display: flex;
+        flex-direction: row;
+        margin-left: 25%;
+    }
+
+    .div_obernai{
+        padding-left: 0.5em;
+    }
+
+    .img_hist{
+        width: 75%;
+        padding-right: 0.5em;
+    }
+
+    .hist{
+        width: 50%;
+        margin-left: 0;
+        padding-right: 1em;
+    }
+
+    .box_resp{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .resp_box, .resp_box_a{
+        width: 50%;
+    }
+
+    .text_infos{
+        width: 100%;
+        padding-right: 1em;
+    }
+
+    .text_tar{
+        width: 100%;
+        padding-left: 1em;
+        margin-left: 0;
+    }
+
+    .titre_tar{
+        padding-left: 0.5em;
+        margin-left: 0;
+    }
+
+    .list_biere{
+        display: flex;
+        justify-content: left;
+    }
+
+    .mini_block_list li{
+        margin-left: 0;
+    }
+
+    .titre_list{
+        width: 90%;
+    }
+
+    .a{
+        width: 100%;
+        padding-left: 0.5em;
+    }
+
+    .b{
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .c{
+        padding-left: 1.5em;
+        width: 90%;
+    }
+}
